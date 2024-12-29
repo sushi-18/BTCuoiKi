@@ -1,0 +1,528 @@
+[
+    {
+        "id": "f89ceb8950d17a62",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3232dd12bf286f8e",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "false",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 3,
+                "gy": 3,
+                "cx": 3,
+                "cy": 3,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "fd705efcb092d34f",
+        "type": "ui_tab",
+        "name": "Tab 1",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "856920326f02a55c",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "fd705efcb092d34f",
+        "order": 1,
+        "disp": true,
+        "width": "9",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "327af29d2e8b62e7",
+        "type": "mqtt-broker",
+        "name": "b1885fa2f7d74b51b98cb5bbf5a83c42.s1.eu.hivemq.cloud",
+        "broker": "b1885fa2f7d74b51b98cb5bbf5a83c42.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "0c617cfd339891b0",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "0c617cfd339891b0",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "9a432173454cc39d",
+        "type": "ui_slider",
+        "z": "f89ceb8950d17a62",
+        "name": "",
+        "label": "Servo",
+        "tooltip": "",
+        "group": "856920326f02a55c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": 1,
+        "className": "",
+        "x": 150,
+        "y": 240,
+        "wires": [
+            [
+                "1b20907416eb0e0c"
+            ]
+        ]
+    },
+    {
+        "id": "a8f736b895b3ae28",
+        "type": "mqtt in",
+        "z": "f89ceb8950d17a62",
+        "name": "",
+        "topic": "esp32/ldr",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "327af29d2e8b62e7",
+        "nl": true,
+        "rap": false,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "6441c4074f910518"
+            ]
+        ]
+    },
+    {
+        "id": "1b20907416eb0e0c",
+        "type": "mqtt out",
+        "z": "f89ceb8950d17a62",
+        "name": "",
+        "topic": "esp32/servo",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "327af29d2e8b62e7",
+        "x": 390,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "6441c4074f910518",
+        "type": "ui_chart",
+        "z": "f89ceb8950d17a62",
+        "name": "",
+        "group": "856920326f02a55c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "LeftLDR",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "800",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 380,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a4dfc7184c51d4f0",
+        "type": "ui_chart",
+        "z": "f89ceb8950d17a62",
+        "name": "",
+        "group": "856920326f02a55c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "RightLDR",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "800",
+        "removeOlder": "45",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 380,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a3bf5407560bd752",
+        "type": "mqtt in",
+        "z": "f89ceb8950d17a62",
+        "name": "",
+        "topic": "esp32/ldr2",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "327af29d2e8b62e7",
+        "nl": true,
+        "rap": false,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 180,
+        "wires": [
+            [
+                "a4dfc7184c51d4f0"
+            ]
+        ]
+    },
+    {
+        "id": "fb9070fd9afb4e03",
+        "type": "ui_switch",
+        "z": "f89ceb8950d17a62",
+        "name": "",
+        "label": "Auto/Manual",
+        "tooltip": "",
+        "group": "856920326f02a55c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 170,
+        "y": 300,
+        "wires": [
+            [
+                "09ff108b53138ff1"
+            ]
+        ]
+    },
+    {
+        "id": "09ff108b53138ff1",
+        "type": "mqtt out",
+        "z": "f89ceb8950d17a62",
+        "name": "",
+        "topic": "esp32/switch",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "327af29d2e8b62e7",
+        "x": 390,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "9f69e195e08a9697",
+        "type": "mqtt in",
+        "z": "f89ceb8950d17a62",
+        "name": "",
+        "topic": "esp32/temperature",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "327af29d2e8b62e7",
+        "nl": true,
+        "rap": false,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 360,
+        "wires": [
+            [
+                "c3292bb641a4058d"
+            ]
+        ]
+    },
+    {
+        "id": "c3292bb641a4058d",
+        "type": "ui_chart",
+        "z": "f89ceb8950d17a62",
+        "name": "",
+        "group": "856920326f02a55c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Temp",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "70",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 370,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "48af8a7aa3623b02",
+        "type": "ui_chart",
+        "z": "f89ceb8950d17a62",
+        "name": "",
+        "group": "856920326f02a55c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Hum",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 370,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "20d65bea95c28c73",
+        "type": "mqtt in",
+        "z": "f89ceb8950d17a62",
+        "name": "",
+        "topic": "esp32/humidity",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "327af29d2e8b62e7",
+        "nl": true,
+        "rap": false,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 420,
+        "wires": [
+            [
+                "48af8a7aa3623b02"
+            ]
+        ]
+    }
+]
