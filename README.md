@@ -12,12 +12,22 @@
 
  <strong><small>2. Sơ đồ khối:</strong></small>
   ![Hình_1](https://github.com/sushi-18/BTCuoiKi/blob/main/Images/Sodokhoi.png?raw=true)
+  <p align="center"><em>Hình_1: Sơ đồ khối của dự án</em></p>
 
 <strong><small>3. Một số ảnh chụp về dự án</strong></small>
    ![Hình_2](https://github.com/sushi-18/BTCuoiKi/blob/main/Images/Screenshot%20(422).png?raw=true)
+   <p align="center"><em>Hình_2: Giao diện của Dashboard</em></p>
+
+   
    ![Hình_3](https://github.com/sushi-18/BTCuoiKi/blob/main/Images/Screenshot%20(423).png?raw=true)
+   <p align="center"><em>Hình_3: Giao diện của Dashboard(tiếp)</em></p>
+
+   
    ![Hình_4](https://github.com/sushi-18/BTCuoiKi/blob/main/Images/Screenshot%20(421).png?raw=true)
-   ![Hình_5](https://github.com/sushi-18/BTCuoiKi/blob/main/Images/Screenshot%20(420).png?raw=true)
+   <p align="center"><em>Hình_4: Giao diện cấu hình Node_Red</em></p>
+
+   
+   ![Hình_5](https://github.com/sushi-18/BTCuoiKi/blob/main/Images/Screenshot%20(420).png?raw=true)<p align="center"><em>Hình_5: Giao diện HiveMQ</em></p>
 
  
  <strong><small>3.Tổng kết</strong></small>
