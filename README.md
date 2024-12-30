@@ -30,6 +30,16 @@
    ![Hình_5](https://github.com/sushi-18/BTCuoiKi/blob/main/Images/Screenshot%20(420).png?raw=true)<p align="center"><em>Hình_5: Giao diện HiveMQ</em></p>
 
  
+        
+[Video1: Nhấn vào đây để xem video](https://drive.google.com/file/d/18aTrRPg9n-W1X5n8ukkCCYH-4Am0wsBU/view?usp=sharing)
+- Video1 nói về giao diện Dashboard, các thông số trả về từ cảm biên ánh sáng và cảm biến nhiệt độ, độ ẩm.
+  
+[Video2: Nhấn vào đây để xem video](https://drive.google.com/file/d/1tynBZspasZPVzBvpWf9Q86ytdUZMIVJf/view?usp=sharing)
+- Video2 nói về tính năng tự động hướng sáng của hệ thông; servo tự động quay hường về phía có cường độ ánh sáng mạnh hơn.
+  
+[Video3: Nhấn vào đây để xem video](https://drive.google.com/file/d/1u5dNn24XlzxTapCg-4MknUErSu8EsbS-/view?usp=sharing)
+- Video3 nói về việc sử dụng nút switch để chuyển giữa hai chế độ thủ công và tự động điều khiển servo.
+  
  <strong><small>3.Tổng kết</strong></small>
 - Dự án "Hệ thống theo dõi môi trường và điều khiển hướng sáng" đã được hoàn thiện thành công, đáp ứng các mục tiêu đề ra.
 - Các kết quả nổi bật của dự án bao gồm:
